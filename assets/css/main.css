@@ -1,6 +1,7 @@
 body {
 	background: #00091B;
 	color: #fff;
+	z-index: 1;
   }
   
   
@@ -47,31 +48,40 @@ body {
 	
   }
   
-  .icons {
-	text-align: center;
-	
-  }
+  .social-icons{
+	padding: 100px;
+  text-align: center;
+  position: inherit;
+}
+.social-icons a{
+	color:#fff;
+  line-height:30px;
+  font-size:30px;
+  margin: 0 5px;
+  text-decoration:none;
   
-  .icons i {
-	color: #00091B;
-	background: #fff;
-	height: 15px;
-	width: 15px;
-	padding: 13px;
-	margin: 0 10px;
-	border-radius: 50px;
-	border: 2px solid #fff;
-	transition: all 200ms ease;
-	text-decoration: none;
-	position: relative;
-  }
-  
-  .icons i:hover, .icons i:active {
-	color: #fff;
-	background: none;
-	cursor: pointer !important;
-	transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	text-decoration: none;
-	
-  }
+}
+.social-icons a i{
+	line-height:30px;
+  font-size:30px;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1); 
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1); 
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+.social-icons a:hover i{
+  box-shadow: 0px 0px 150px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);   
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.5);
+}
