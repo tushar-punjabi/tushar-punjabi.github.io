@@ -51,7 +51,8 @@ body {
   .social-icons{
 	padding: 100px;
   text-align: center;
-  position: inherit;
+  position: relative;
+  top:500px;
 }
 .social-icons a{
 	color:#fff;
