@@ -49,10 +49,9 @@ body {
   }
   
   .social-icons{
-	padding: 100px;
+	padding: 200px;
   text-align: center;
-  position: relative;
-  top:500px;
+  position: sticky;
 }
 .social-icons a{
 	color:#fff;
