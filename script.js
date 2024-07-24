@@ -1152,7 +1152,7 @@ let loadFile;
 } //  // scope for loadFile
 
 function loadInitialFile() {
-  puzzle.srcImage.src = "https://assets.codepen.io/2574552/Mona_Lisa.jpg";
+  puzzle.srcImage.src = "ruler.jpg";
 }
 //-----------------------------------------------------------------------------
 function imageLoaded(puzzle) {
@@ -1457,7 +1457,6 @@ window.addEventListener("resize", event => {
 });
 
 puzzle = new Puzzle({ container: "forPuzzle" });
-autoStart = isMiniature(); // used for nice miniature in CodePen
 
 loadInitialFile();
 requestAnimationFrame(animate);
